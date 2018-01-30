@@ -10,7 +10,6 @@ public class LeapYear {
 	} else {
 	    return false;
 	}
-
     }
 
     /** Calls isLeapYear to print correct statement.
