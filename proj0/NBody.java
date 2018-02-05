@@ -24,16 +24,11 @@ public class NBody {
 	public static void main(String[] args) {
 		double T = Double.parseDouble(args[0]);
 		double dt = Double.parseDouble(args[1]);
-		String filename = new String();
-		filename = args[2];
+		String filename = args[2];
 		Planet[] allPlanets = NBody.readPlanets(filename);
-		
 		double radius = NBody.readRadius(filename);
 		StdDraw.setScale(-radius, radius);
-		
 		StdDraw.enableDoubleBuffering();
-		
-		
 		double time = 0.0;
 		double[] xForces = new double[allPlanets.length];
 		double[] yForces = new double[allPlanets.length];
