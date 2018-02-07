@@ -82,6 +82,9 @@ public class IntList {
 
     public static IntList dcatenate(IntList A, IntList B) {
         //TODO:  fill in method
+        if (A == null) {
+            return B;
+        }
         IntList L = A;
         while(L.rest != null) {
             L = L.rest;
@@ -112,6 +115,15 @@ public class IntList {
         return res;
     }
 
+    /**
+     * another version of catenate using recursion, got reference from githuh
+     * public static IntList catenateRecursion(IntList A, IntList B) {
+        if (A = null) {
+            return B;
+         }
+        return new IntList(A.first, catenateRecursion(A.rest, B));
+     }
+     */
 
 
 
