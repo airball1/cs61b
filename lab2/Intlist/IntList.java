@@ -118,7 +118,7 @@ public class IntList {
     /**
      * another version of catenate using recursion, got reference from githuh
      * public static IntList catenateRecursion(IntList A, IntList B) {
-        if (A = null) {
+        if (A == null) {
             return B;
          }
         return new IntList(A.first, catenateRecursion(A.rest, B));
